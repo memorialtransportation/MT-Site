@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Memorial Transportation</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; background:#F7F8F3; color:#2D1B1E; }
+.text-mt-green { color:#8BA848; }
+.bg-mt-green { background:#8BA848; }
+.bg-mt-dark { background:#2D1B1E; }
+
+.hero {
+    background-image: url('hero-truck.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+.hero::before {
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-white py-4 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+
+<img src="logo.png" class="h-10">
+
+<nav class="hidden md:flex gap-8 font-bold text-xs uppercase">
+<a href="index.html">Home</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Advantage</a>
+<a href="contact.html" class="border-b-2 border-mt-green">Contact</a>
+<a href="tel:4707558508" class="bg-mt-green text-white px-5 py-2">
+24/7 Dispatch
+</a>
+</nav>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero flex items-center">
+<div class="relative z-10 max-w-7xl mx-auto px-6 text-white">
+<h1 class="text-4xl font-extrabold">
+LET’S KEEP YOUR FREIGHT<br>
+<span class="text-mt-green">MOVING FORWARD.</span>
+</h1>
+
+<p class="mt-4 max-w-xl text-sm">
+Have a question, need a rate, or ready to get started?
+Our team is here 24/7 to help.
+</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+<!-- FORM -->
+<div>
+<h2 class="text-xl font-bold mb-4">GET IN TOUCH</h2>
+
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<input type="text" placeholder="Full Name *" class="p-3 border">
+<input type="text" placeholder="Company Name" class="p-3 border">
+</div>
+
+<div class="grid grid-cols-2 gap-4">
+<input type="email" placeholder="Email Address *" class="p-3 border">
+<input type="text" placeholder="Phone Number *" class="p-3 border">
+</div>
+
+<select class="p-3 border w-full">
+<option>Service Needed</option>
+<option>Airport Linehaul</option>
+<option>Expedited Freight</option>
+<option>Dedicated Lanes</option>
+</select>
+
+<textarea placeholder="Message *" class="p-3 border w-full"></textarea>
+
+<button class="bg-mt-green text-white w-full py-3 font-bold">
+SEND MESSAGE
+</button>
+</form>
+</div>
+
+<!-- INFO -->
+<div>
+<h2 class="text-xl font-bold mb-6">CONTACT INFORMATION</h2>
+
+<div class="space-y-6 text-sm">
+
+<div>
+<p class="font-bold">24/7 DISPATCH</p>
+<p class="text-mt-green">470-755-8508</p>
+</div>
+
+<div>
+<p class="font-bold">EMAIL</p>
+<p>info@memorialtransportation.com</p>
+</div>
+
+<div>
+<p class="font-bold">MAIN OFFICE</p>
+<p>
+5300 Memorial Dr<br>
+Stone Mountain, GA 30083
+</p>
+</div>
+
+<div>
+<p class="font-bold">HOURS</p>
+<p>24 Hours / 7 Days</p>
+</div>
+
+<div>
+<p class="font-bold">MC / DOT</p>
+<p>MC-1067828 | DOT 3343999</p>
+</div>
+
+</div>
+
+<!-- MAP -->
+<div class="mt-8">
+<iframe 
+src="https://maps.google.com/maps?q=5300 memorial dr stone mountain&t=&z=12&ie=UTF8&iwloc=&output=embed"
+class="w-full h-64 border">
+</iframe>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-xs py-6 bg-white">
+© 2026 Memorial Transportation
+</footer>
+
+</body>
+</html>
